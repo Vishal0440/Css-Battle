@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: cadetblue;
+        display: grid;
+        place-items: center;
+      }
+      .main {
+        width: 300px;
+        height: 400px;
+        background-color: rgb(170, 68, 98);
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px 10px red;
+      }
+      .main h1 {
+        position: absolute;
+        top: 120px;
+        left: 50px;
+        color: cornflowerblue;
+      }
+      .main p {
+        position: absolute;
+        top: 180px;
+        text-align: center;
+        color: rgb(226, 226, 226);
+      }
+      a {
+        position: absolute;
+        top: 280px;
+        left: 100px;
+        color: rgb(0, 0, 0);
+        border: 3px solid black;
+        text-decoration: none;
+        padding: 5px;
+      }
+      .child {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: aliceblue;
+        top: 30px;
+        left: 110px;
+      }
+      .child h2 {
+        margin: 20px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Vishal Prasad</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe atque
+        possimus sint praesentium. Inventore perspiciatis enim ratione et quae
+        laudantium!
+      </p>
+      <a href="#">Read More</a>
+      <div class="child"><h2>007</h2></div>
+    </div>
+  </body>
+</html>

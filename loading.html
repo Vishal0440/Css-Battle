@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: darkgray;
+      }
+      .parent {
+        width: 100vw;
+        height: 100vh;
+        background-color: deeppink;
+        display: grid;
+        place-items: center;
+      }
+      .main {
+        width: 300px;
+        height: 300px;
+        position: relative;
+      }
+      .rot {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        border-right: 20px solid red;
+        border-radius: 50%;
+        animation: rotate 2s linear infinite;
+        /* transition: 0.1s linear; */
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        /* 50% {
+          transform: rotate(90deg);
+          border-right: 20px solid rgb(94, 255, 0);
+        }
+        75% {
+          transform: rotate(180deg);
+          border-right: 20px solid rgb(255, 0, 0);
+        } */
+        100% {
+          transform: rotate(360deg);
+          /* border-right: 20px solid rgb(0, 213, 255); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="main">
+        <div class="rot"></div>
+        <h1>Loading</h1>
+      </div>
+    </div>
+  </body>
+</html>

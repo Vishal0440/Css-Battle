@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(51, 51, 51);
+        display: grid;
+        place-items: center;
+      }
+      .main {
+        width: 40rem;
+        height: 25rem;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+      }
+      span {
+        display: block;
+        width: 0.5rem;
+        height: 10rem;
+        background-color: red;
+        margin: 0 13px;
+        position: relative;
+        transform-origin: top;
+      }
+      span::before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        box-shadow: 4px 4px 10px rgb(145, 69, 69);
+        bottom: -20px;
+        left: -10px;
+        border-radius: 60%;
+        background-color: red;
+      }
+      span:first-child {
+        animation: left 2s linear infinite;
+      }
+      span:last-child {
+        animation: right 2s linear 1s infinite;
+      }
+      @keyframes left {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(70deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes right {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(-70deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </body>
+</html>

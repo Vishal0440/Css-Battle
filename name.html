@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: cadetblue;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+      }
+      main ul li {
+        list-style: none;
+        display: inline;
+        margin: 10px;
+        font-size: 80px;
+        color: red;
+        animation: light 2s linear infinite;
+        margin-left: 0;
+      }
+      @keyframes light {
+        0% {
+          color: chartreuse;
+        }
+        90% {
+          color: rgb(64, 0, 255);
+        }
+        100% {
+          color: rgb(205, 76, 50);
+          /* box-shadow: 0 0 1rem pink, 0 0 2rem rgb(36, 150, 127); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li>V</li>
+        <li>I</li>
+        <li>S</li>
+        <li>H</li>
+        <li>A</li>
+        <li>L</li>
+      </ul>
+    </main>
+  </body>
+</html>

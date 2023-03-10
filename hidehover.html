@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(245, 179, 223);
+        display: grid;
+        place-items: center;
+      }
+      .box {
+        width: 500px;
+        height: 250px;
+        border-radius: 10px;
+        background-color: rgb(135, 158, 144);
+        text-align: center;
+        clip-path: circle(29% at 100% 0);
+        transition: 0.3s linear;
+      }
+      .box:hover {
+        clip-path: circle(141.4% at 100% 0);
+      }
+      h1 {
+        color: chartreuse;
+        margin: 10px;
+      }
+      p {
+        padding: 30px;
+        margin: 10px;
+      }
+      h2 {
+        color: rgb(206, 34, 34);
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Prasad Vishal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad
+        porro consequatur nisi illo nulla. Cum veritatis odio culpa laudantium!
+      </p>
+      <h2>Love,Hate,War</h2>
+    </div>
+  </body>
+</html>
